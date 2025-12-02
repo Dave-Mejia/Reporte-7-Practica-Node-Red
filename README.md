@@ -28,16 +28,19 @@ f. Pantalla LCD 16x2(I2C)
 
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%202.png?raw=true)
 
-![]
-![]
-![]
-![]
-![]
-![]
-![]
-![]
-![]
-![]
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%203.png?raw=true)
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+
+
 
 
 2.- Una vez descargado, realizar la instalación
