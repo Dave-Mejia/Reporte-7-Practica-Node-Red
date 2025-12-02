@@ -42,6 +42,7 @@ f. Pantalla LCD 16x2(I2C)
 6. Una vez instalado colocar node-red y presionar ENTER y despues permitir.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%207.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%208.png?raw=true)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%209.png?raw=true)
 
 8. Para abrir el servidor colocar la siguiente direccion IP y presionar ENTER.
 ```127.0.0.1:1880```
