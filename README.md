@@ -37,7 +37,7 @@ f. Pantalla LCD 16x2(I2C)
 
 5. Colocar el siguiente codigo
 ```npm install -g --unsafe-perm node-red``` y presionar ENTER
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%206.png?raw=true)
 
 6. Una vez instalado colocar node-red y presionar ENTER y despues permitir.
 ![](
