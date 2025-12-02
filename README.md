@@ -51,6 +51,7 @@ f. Pantalla LCD 16x2(I2C)
 ### Preparación
 1. Ir al adminstrador de paleta e instlar note red dashboard
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%2011.png?raw=true)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%2012.png?raw=true)
 
 
 ### Previo
