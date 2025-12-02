@@ -25,7 +25,9 @@ f. Pantalla LCD 16x2(I2C)
 ### Instalación Node Red
 1. Abrir el ink https://nodejs.org/es y realizar la descarga del sofwtare.
 
-![](<img width="1779" height="81" alt="image" src="https://github.com/user-attachments/assets/3cb26972-6542-4483-a1b0-31bd831c1552" />)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%201.png?raw=true
+<img width="1779" height="81" alt="image" src="https://github.com/user-attachments/assets/ecd781ac-0dea-442a-b3f5-14ff7692a2d1" />)
+
 
 
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%202.png?raw=true
