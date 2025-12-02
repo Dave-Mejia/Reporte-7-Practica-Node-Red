@@ -46,6 +46,7 @@ f. Pantalla LCD 16x2(I2C)
 
 8. Para abrir el servidor colocar la siguiente direccion IP y presionar ENTER.
 ```127.0.0.1:1880```
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%2010.png?raw=true)
 
 ### Preparación
 1. Ir al adminstrador de paleta e instlar note red dashboard
