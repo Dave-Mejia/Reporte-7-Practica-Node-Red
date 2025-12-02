@@ -54,8 +54,8 @@ f. Pantalla LCD 16x2(I2C)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%2012.png?raw=true)
 
 ### Instalación de Broker
-1. Colocar Borker MTT en buscador e instalar
-![](
+1. Colocar Borker MQTT en buscador e instalar
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker1.png?raw=true)
 ![](
 ![](
 
