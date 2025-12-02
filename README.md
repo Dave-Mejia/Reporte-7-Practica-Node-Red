@@ -28,23 +28,8 @@ f. Pantalla LCD 16x2(I2C)
 
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%202.png?raw=true)
 
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%203.png?raw=true)
-![](
-![](
-![](
-![](
-![](
-![](
-![](
-![](
-![](
-![](
-
-
-
-
 2.- Una vez descargado, realizar la instalación
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%203.png?raw=true)
 
 3. Después de instalar colocar cmd en el buscador de windows y ejecutar como administrador
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%204.png?raw=true)
@@ -52,11 +37,12 @@ f. Pantalla LCD 16x2(I2C)
 
 4. Colocar el siguiente codigo
 ```npm install -g --unsafe-perm node-red``` y presionar ENTER
-
-5. Una vez instalado colocar node-red y presionar ENTER y despues permitir.
 ![](
 
-6. Para abrir el servidor colocar la siguiente direccion IP y presionar ENTER.
+6. Una vez instalado colocar node-red y presionar ENTER y despues permitir.
+![](
+
+7. Para abrir el servidor colocar la siguiente direccion IP y presionar ENTER.
 ```127.0.0.1:1880```
 
 ### Preparación
