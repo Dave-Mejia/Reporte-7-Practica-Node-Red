@@ -47,7 +47,7 @@ f. Pantalla LCD 16x2(I2C)
 ![](
 
 3. Después de instalar colocar cmd en el buscador de windows y ejecutar como administrador
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%204.png?raw=true)
 ![](
 
 4. Colocar el siguiente codigo
