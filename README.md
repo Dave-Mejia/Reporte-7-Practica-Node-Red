@@ -26,7 +26,19 @@ f. Pantalla LCD 16x2(I2C)
 1. Abrir el ink https://nodejs.org/es y realizar la descarga del sofwtare.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%201.png?raw=true)
 
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%202.png?raw=true)
+
+![]
+![]
+![]
+![]
+![]
+![]
+![]
+![]
+![]
+![]
+
 
 2.- Una vez descargado, realizar la instalación
 ![](
