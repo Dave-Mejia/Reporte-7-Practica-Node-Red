@@ -57,7 +57,7 @@ f. Pantalla LCD 16x2(I2C)
 1. Colocar Borker MQTT en buscador e instalar
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker1.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%202.png?raw=true)
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%203.png?raw=true)
 
 
 ### Previo
