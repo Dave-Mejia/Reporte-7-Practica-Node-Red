@@ -140,7 +140,7 @@ DHTesp dhtSensor;
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 const char* mqtt_server = "3.121.19.141";
-String username_mqtt="educatronicosiot";
+String username_mqtt="Ing.DavidMejia";
 String password_mqtt="12345678";
 
 WiFiClient espClient;
@@ -247,9 +247,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
     StaticJsonDocument<128> doc;
 
-    doc["DEVICE"] = "ESP32";
-    //doc["Anho"] = 2022;
-    //doc["Empresa"] = "Educatronicos";
+    doc["DEVICE"] = "Ing.DavidMejia";
+    //doc["Anho"] = 2025;
+    //doc["Empresa"] = "Dave";
     doc["TEMPERATURA"] = String(data.temperature, 1);
     doc["HUMEDAD"] = String(data.humidity, 1);
    
@@ -261,23 +261,26 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     Serial.print("Publish message: ");
     Serial.println(output);
     Serial.println(output.c_str());
-    client.publish("Diplomado", output.c_str());
+    client.publish("DavidM", output.c_str());
   }
 }
 ```
 2. Confirmar que la IP configurada en el codigo (const char* mqtt_server =) sea a misma que en el MQTT IN de Node Red.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Codigo%201.png?raw=true)
 
-4. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
+3. Confirmar que en la programación del Json se tenga el mismo nombre en client.publish que en el MQTT In.
+![](
+
+5. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
 
-5. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "DHT sensor library for ESPx" y agregarla
+6. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "DHT sensor library for ESPx" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Libreria%20DHT.png?raw=true)
 
-6. De igual manera agregar la librería "LiquidCrystal I2C" para la pantalla LCD
+7. De igual manera agregar la librería "LiquidCrystal I2C" para la pantalla LCD
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Libreria%20Pantalla%20LCD%20Liquid%20cristal.png?raw=true)
   
-7. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
+8. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
 
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
 
