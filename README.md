@@ -275,7 +275,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
 
 7. De igual manera agregar las siguientes librerias.
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Librerias%20varias%201.png?raw=true)
 
 9. De igual manera agregar la librería "Esp Wifi Con" para la conexion.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/libreria%20wifi%201.png?raw=true)   
