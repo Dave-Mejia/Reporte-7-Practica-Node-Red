@@ -120,7 +120,7 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Conectado%201.png?raw=true)
 
 
-### Previo
+### Configuración de ESP32
 1. Abrir la plataforma WOKWI.
 
 ### Preparación
@@ -128,79 +128,145 @@ return msg;
 3. Abrir la terminal de programación y colocar la siguente programación:
 
 ```
+#include <ArduinoJson.h>
+#include <WiFi.h>
+#include <PubSubClient.h>
+#define BUILTIN_LED 2
 #include "DHTesp.h"
-#include <LiquidCrystal_I2C.h>
-#define I2C_ADDR    0x27
-#define LCD_COLUMNS 20
-#define LCD_LINES   4
-
-const int DHT_PIN = 16;
-const int Trigger = 4;   //Pin digital 2 para el Trigger del sensor
-const int Echo = 15;   //Pin digital 3 para el Echo del sensor
-
+const int DHT_PIN = 15;
 DHTesp dhtSensor;
+// Update these with values suitable for your network.
 
-LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
+const char* ssid = "Wokwi-GUEST";
+const char* password = "";
+const char* mqtt_server = "3.121.19.141";
+String username_mqtt="educatronicosiot";
+String password_mqtt="12345678";
+
+WiFiClient espClient;
+PubSubClient client(espClient);
+unsigned long lastMsg = 0;
+#define MSG_BUFFER_SIZE  (50)
+char msg[MSG_BUFFER_SIZE];
+int value = 0;
+
+void setup_wifi() {
+
+  delay(10);
+  // We start by connecting to a WiFi network
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  randomSeed(micros());
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.print("Message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i = 0; i < length; i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+
+  // Switch on the LED if an 1 was received as first character
+  if ((char)payload[0] == '1') {
+    digitalWrite(BUILTIN_LED, LOW);   
+    // Turn the LED on (Note that LOW is the voltage level
+    // but actually the LED is on; this is because
+    // it is active low on the ESP-01)
+  } else {
+    digitalWrite(BUILTIN_LED, HIGH);  
+    // Turn the LED off by making the voltage HIGH
+  }
+
+}
+
+void reconnect() {
+  // Loop until we're reconnected
+  while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    // Create a random client ID
+    String clientId = "ESP8266Client-";
+    clientId += String(random(0xffff), HEX);
+    // Attempt to connect
+    if (client.connect(clientId.c_str(), username_mqtt.c_str() , password_mqtt.c_str())) {
+      Serial.println("connected");
+      // Once connected, publish an announcement...
+      client.publish("outTopic", "hello world");
+      // ... and resubscribe
+      client.subscribe("inTopic");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+      // Wait 5 seconds before retrying
+      delay(5000);
+    }
+  }
+}
 
 void setup() {
-
-  Serial.begin(9600);//iniciailzamos la comunicación
-  pinMode(Trigger, OUTPUT); //pin como salida
-  pinMode(Echo, INPUT);  //pin como entrada
-  digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
+  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+  Serial.begin(115200);
+  setup_wifi();
+  client.setServer(mqtt_server, 1883);
+  client.setCallback(callback);
   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
-  lcd.init();
-  lcd.backlight();
-
 }
 
-void loop()
- {
+void loop() {
 
 
-//SENSOR ULTRSONICO
-  long t; //timepo que demora en llegar el eco
-  long d; //distancia en centimetros
+delay(1000);
+TempAndHumidity  data = dhtSensor.getTempAndHumidity();
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
 
-  digitalWrite(Trigger, HIGH);
-  delayMicroseconds(10);          //Enviamos un pulso de 10us
-  digitalWrite(Trigger, LOW);
-  
-  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
-  d = t/59;             //escalamos el tiempo a una distancia en cm
+  unsigned long now = millis();
+  if (now - lastMsg > 2000) {
+    lastMsg = now;
+    //++value;
+    //snprintf (msg, MSG_BUFFER_SIZE, "hello world #%ld", value);
 
-//SENSOR DETEMPERATURA
-  TempAndHumidity  data = dhtSensor.getTempAndHumidity();
-  Serial.println("Temp: " + String(data.temperature, 1) + "°C");
-  Serial.println("Humidity: " + String(data.humidity, 1) + "%");
-  Serial.println("---");
+    StaticJsonDocument<128> doc;
 
+    doc["DEVICE"] = "ESP32";
+    //doc["Anho"] = 2022;
+    //doc["Empresa"] = "Educatronicos";
+    doc["TEMPERATURA"] = String(data.temperature, 1);
+    doc["HUMEDAD"] = String(data.humidity, 1);
+   
 
-  lcd.clear();
-  lcd.setCursor(1, 0);
-  lcd.print("Diplomado AIyM");
-  lcd.setCursor(3, 1);
-  lcd.print("22 Nov 25");
-  delay(1500);
-  lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Ing.David Mejia");
-  delay(1500);
-  lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Distancia:");
-  lcd.print(d);
-  lcd.setCursor(14, 0);
-  lcd.print("cm");
-  delay(1500);
-  lcd.clear();
-  lcd.setCursor(2, 0);
-  lcd.print("Temp: " + String(data.temperature, 1) + "\xDF"+"C  ");
-  lcd.setCursor(0, 1);
-  lcd.print(" Humidity: " + String(data.humidity, 1) + "% ");
-  delay(1500); 
+    String output;
+    
+    serializeJson(doc, output);
+
+    Serial.print("Publish message: ");
+    Serial.println(output);
+    Serial.println(output.c_str());
+    client.publish("Diplomado", output.c_str());
+  }
 }
 ```
+2. Confirmar que la IP configurada en el codigo (const char* mqtt_server =) sea a misma que en el MQTT IN de Node Red.
+![](
 
 4. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
