@@ -59,8 +59,13 @@ f. Pantalla LCD 16x2(I2C)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%202.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%203.png?raw=true)
 
+### Configuración de servidor
+1. Colocar un bloque MQTT IN, dar clic sobre el y configurar de acuerdo a la siguiente imagen.
+![]
+Dar clic en Update y configurar como se muestra abajo.
+![]
 
-### Previo
+}### Previo
 1. Abrir la plataforma WOKWI.
 
 ### Preparación
