@@ -106,6 +106,10 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%205+.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%206.png?raw=true)
 
+### Configuracion de Chart
+1. Configurar el bloque Chart de temperatura como indica la imagen.
+![](
+
 ### Previo
 1. Abrir la plataforma WOKWI.
 
