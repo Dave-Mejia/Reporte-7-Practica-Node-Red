@@ -286,7 +286,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
   
 9. Conectar circuito como indica la figura de abajo
-![]()
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/DHT22%201.png?raw=true)
 
 ### Operación
 12. Iniciar simulador dando clic en el icono "start simulation"
