@@ -106,8 +106,10 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%205+.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%206.png?raw=true)
 
-### Configuracion de Chart
+### Configuracion de Chart & Gauge.
 1. Configurar el bloque Chart de temperatura como indica la imagen.
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%201.png?raw=true)
+2. Configurar el bloque Gauge como muestra la siguiente imagen.
 ![](
 
 ### Previo
