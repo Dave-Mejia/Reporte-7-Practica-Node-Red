@@ -277,18 +277,16 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 6. De igual manera agregar las siguientes librerias.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Librerias%20varias%202.png?raw=true)
 
-10. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
+7. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
 
 8. Buscar el sensor DHT22 y agregar
    
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part%202.png?raw=true)
 
-9. Repetir el paso anterior buscar el sensor HCSR04 y agregar 
-10. De igual forma buscar la pantalla LCD 16x2(I2C) y agregar
-   
-11. Conectar circuito como indica la figura de abajo
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Conexion%20Tarjeta%20ESP32,%20Sensor%20DHT22,%20sensor%20HC-SR-04%20y%20pantalla%20LCD.png?raw=true)
+  
+9. Conectar circuito como indica la figura de abajo
+![]()
 
 ### Operación
 12. Iniciar simulador dando clic en el icono "start simulation"
