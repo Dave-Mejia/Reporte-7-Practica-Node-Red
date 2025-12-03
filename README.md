@@ -115,6 +115,11 @@ return msg;
 
 3. Realizar el mismo paso para Chart y Gauge de Humedad.
 
+### Confirmación de conexión
+1. Presionar Deploy y confirmar que MQTT In se conecte
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Conectado%201.png?raw=true)
+
+
 ### Previo
 1. Abrir la plataforma WOKWI.
 
