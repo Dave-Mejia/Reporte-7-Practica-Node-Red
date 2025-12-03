@@ -71,7 +71,10 @@ Dar clic en Update y configurar como se muestra abajo.
 2. Coloca un bloque JSON, dar clic sobre el y configurar comp se muestra en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20JSON%201.png?raw=true)
 
-3. Colocar dos bloques function, conectar y configurar. colocando el siguiente codigo en cada bloque respectivamente:
+3. Colocar dos bloques function Y conectar.
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%201.png?raw=true)
+
+4. Configurar. colocando el siguiente codigo en cada bloque respectivamente:
 ```
 msg.payload = msg.payload.TEMPERATURA;
 msg.topic = "TEMPERATURA";
@@ -83,8 +86,7 @@ msg.topic = "HUMEDAD";
 return msg;
 ```
 
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%201.png?raw=true)
-
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%202.png?raw=true)
 
 
 ### Previo
