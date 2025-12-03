@@ -65,6 +65,9 @@ f. Pantalla LCD 16x2(I2C)
 Dar clic en Update y configurar como se muestra abajo.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20MQTT%202.png?raw=true)
 
+2. Coloca un bloque JSON, dar clic sobre el y configurar comp se muestra en la imagen.
+![](
+
 }### Previo
 1. Abrir la plataforma WOKWI.
 
