@@ -269,7 +269,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Codigo%201.png?raw=true)
 
 3. Confirmar que en la programación del Json se tenga el mismo nombre en client.publish que en el MQTT In.
-![](
+![](![](
 
 5. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
