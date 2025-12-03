@@ -284,9 +284,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Libreria%20arduino%20json.png?raw=true)
 
 9. De igual manera agregar la librería "Esp Wifi Con" para la conexion.
-![](   
-10. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/libreria%20wifi%201.png?raw=true)   
 
+10. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
 
 8. Buscar el sensor DHT22 y agregar
