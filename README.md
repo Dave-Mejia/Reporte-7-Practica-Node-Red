@@ -280,10 +280,12 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 7. De igual manera agregar la librería "LiquidCrystal I2C" para la pantalla LCD
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Libreria%20Pantalla%20LCD%20Liquid%20cristal.png?raw=true)
   
-8. De igual manera agregar la librería "Arduinjson" para la conexion.
+8. De igual manera agregar la librería "Arduinojson" para la conexion.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Libreria%20arduino%20json.png?raw=true)
 
-9. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
+9. De igual manera agregar la librería "Esp Wifi Con" para la conexion.
+![](   
+10. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
 
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
 
