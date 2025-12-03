@@ -101,9 +101,10 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%202.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%203.png?raw=true)
 
-3. Agregar grupos y configurar
+3. Agregar grupo de grafica y de indicadores y configurar
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%204.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%205+.png?raw=true)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%206.png?raw=true)
 
 ### Previo
 1. Abrir la plataforma WOKWI.
