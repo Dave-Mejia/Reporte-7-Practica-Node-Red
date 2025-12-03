@@ -85,6 +85,8 @@ return msg;
 
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%201.png?raw=true)
 
+
+
 ### Previo
 1. Abrir la plataforma WOKWI.
 
