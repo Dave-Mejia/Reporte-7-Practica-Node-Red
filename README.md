@@ -61,7 +61,7 @@ f. Pantalla LCD 16x2(I2C)
 
 ### Configuración de servidor
 1. Colocar un bloque MQTT IN, dar clic sobre el y configurar de acuerdo a la siguiente imagen.
-![]
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20MQTT%201.png?raw=true)
 Dar clic en Update y configurar como se muestra abajo.
 ![]
 
