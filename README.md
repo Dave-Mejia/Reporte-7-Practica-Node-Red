@@ -278,6 +278,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Librerias%20varias%202.png?raw=true)
 
 7. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
+   
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
 
 8. Buscar el sensor DHT22 y agregar
