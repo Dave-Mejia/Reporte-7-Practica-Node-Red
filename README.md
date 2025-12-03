@@ -91,7 +91,8 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%203.png?raw=true)
 
 5. Agregar los bloques chart y gauge y conectar como se muestra en la imagen.
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%20&%20Gauge%201.png?raw=true)
+
 
 ### Previo
 1. Abrir la plataforma WOKWI.
