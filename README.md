@@ -266,7 +266,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 }
 ```
 2. Confirmar que la IP configurada en el codigo (const char* mqtt_server =) sea a misma que en el MQTT IN de Node Red.
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Codigo%201.png?raw=true)
 
 4. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
