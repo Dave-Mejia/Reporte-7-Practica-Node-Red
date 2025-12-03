@@ -72,10 +72,18 @@ Dar clic en Update y configurar como se muestra abajo.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20JSON%201.png?raw=true)
 
 3. Colocar dos bloques function, conectar y configurar. colocando el siguiente codigo en cada bloque respectivamente:
-`msg.payload = msg.payload.TEMPERATURA;
+```
+msg.payload = msg.payload.TEMPERATURA;
 msg.topic = "TEMPERATURA";
 return msg;
-`
+```
+```
+msg.payload = msg.payload.HUMEDAD;
+msg.topic = "HUMEDAD";
+return msg;
+```
+
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%201.png?raw=true)
 
 ### Previo
 1. Abrir la plataforma WOKWI.
