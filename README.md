@@ -93,6 +93,9 @@ return msg;
 5. Agregar los bloques chart y gauge y conectar como se muestra en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%20&%20Gauge%201.png?raw=true)
 
+### Configurar Dashboard
+1.![](
+
 
 ### Previo
 1. Abrir la plataforma WOKWI.
