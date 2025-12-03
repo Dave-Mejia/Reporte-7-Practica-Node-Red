@@ -295,7 +295,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/play.png?raw=true)
 
 
-13. Visualizar los datos en el monitor serial.
+13. Dar clic en inicio de conexion.
+![](
 
 ## Resultados
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
