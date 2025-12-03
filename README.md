@@ -54,10 +54,13 @@ f. Pantalla LCD 16x2(I2C)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Node%20Red%2012.png?raw=true)
 
 ### Instalación de Broker
-1. Colocar Borker MQTT en buscador e instalar
+1. Colocar Broker MQTT en buscador e instalar
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker1.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%202.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Broker%203.png?raw=true)
+
+2. Si no funciona, intentar con otro broker y seleccionar una IP.
+![](
 
 ### Configuración de servidor
 1. Colocar un bloque MQTT IN, dar clic sobre el y configurar de acuerdo a la siguiente imagen IMPORTANTE colocar la direccion IP ```3.121.19.141```
