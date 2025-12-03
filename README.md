@@ -274,11 +274,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 5. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
 
-7. De igual manera agregar las siguientes librerias.
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Librerias%20varias%201.png?raw=true)
-
-9. De igual manera agregar la librería "Esp Wifi Con" para la conexion.
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/libreria%20wifi%201.png?raw=true)   
+6. De igual manera agregar las siguientes librerias.
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Librerias%20varias%202.png?raw=true)
 
 10. Ir al esquema de simulación, dar clic al icono "+ (add new part)"
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part.png?raw=true)
