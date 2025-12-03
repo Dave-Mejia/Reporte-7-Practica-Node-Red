@@ -295,15 +295,13 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/play.png?raw=true)
 
 
-13. Dar clic en inicio de conexion.
-![](
+13. Dar clic en el siguiente icono para iniciar conexion.
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Conexion%201.png?raw=true)
 
 ## Resultados
-Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/resultado%20sensor%20ultrasonico%20y%20temperatura%201.png?raw=true)
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/resultado%20sensor%20ultrasonico%20y%20temperatura%202.png?raw=true)
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/resultado%20sensor%20ultrasonico%20y%20temperatura%203.png?raw=true)
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/resultado%20sensor%20ultrasonico%20y%20temperatura%204.png?raw=true)
+Cuando haya funcionado, verás los valores los datos como se muestra en la siguente imagen.
+![](
+
 
 ## Créditos
 Ralizado por el Ingeniero David Mejía
