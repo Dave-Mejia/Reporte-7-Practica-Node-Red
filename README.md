@@ -109,8 +109,11 @@ return msg;
 ### Configuracion de Chart & Gauge.
 1. Configurar el bloque Chart de temperatura como indica la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%201.png?raw=true)
+
 2. Configurar el bloque Gauge como muestra la siguiente imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Gauge%201.png?raw=true)
+
+3. Realizar el mismo paso para Chart y Gauge de Humedad.
 
 ### Previo
 1. Abrir la plataforma WOKWI.
