@@ -94,7 +94,8 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%20&%20Gauge%201.png?raw=true)
 
 ### Configurar Dashboard
-1.![](
+1. Abrir la seción de dashboard y configurar
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%201.png?raw=true)
 
 
 ### Previo
