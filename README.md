@@ -97,10 +97,13 @@ return msg;
 1. Abrir la seción de dashboard
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%201.png?raw=true)
 
-2. Agregrar tabs, grupos y configurar
+2. Agregrar tabs y configurar
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%202.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%203.png?raw=true)
+
+3. Agregar grupos y configurar
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%204.png?raw=true)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%205+.png?raw=true)
 
 ### Previo
 1. Abrir la plataforma WOKWI.
