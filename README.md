@@ -274,14 +274,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 5. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "HCSR04 ultrasonic sensor" y agregarla
 ![](https://github.com/Dave-Mejia/Reporte-4-ESP32-con-sensor-ultrasonico/blob/main/libreria%20sensor%20ultrasonico.png?raw=true)
 
-6. Ir a la pestaña "Library manager" haer clic sobre el icon "+", buscar la libreria "DHT sensor library for ESPx" y agregarla
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Libreria%20DHT.png?raw=true)
-
-7. De igual manera agregar la librería "LiquidCrystal I2C" para la pantalla LCD
-![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Libreria%20Pantalla%20LCD%20Liquid%20cristal.png?raw=true)
-  
-8. De igual manera agregar la librería "Arduinojson" para la conexion.
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Libreria%20arduino%20json.png?raw=true)
+7. De igual manera agregar las siguientes librerias.
+![](
 
 9. De igual manera agregar la librería "Esp Wifi Con" para la conexion.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/libreria%20wifi%201.png?raw=true)   
