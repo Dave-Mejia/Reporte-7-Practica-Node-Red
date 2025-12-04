@@ -238,7 +238,7 @@ void setup() {
 
 }
 void loop() {
-// distancia= duracion*0.034/2;
+// distancia= duracion*0.034/2;
 safetyDistance = distance;
 long t; //tiempo de retardo de eco
   long d; //distancia en centimetros
