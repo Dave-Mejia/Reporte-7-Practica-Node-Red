@@ -152,7 +152,7 @@ int safetyDistance;
 // Update these with values suitable for your network.
 
 // Update these with values suitable for your network.
-
+
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 const char* mqtt_server = "3.121.19.141";
@@ -165,7 +165,7 @@ unsigned long lastMsg = 0;
 char msg[MSG_BUFFER_SIZE];
 int value = 0;
 void setup_wifi() {
-  delay(10);
+ delay(10);
   // We start by connecting to a WiFi network
   Serial.println();
   Serial.print("Connecting to ");
@@ -254,7 +254,6 @@ long t; //tiempo de retardo de eco
   Serial.print("cm");
   Serial.println();
   delay(2000);     
-
 delay(1000);
 TempAndHumidity  data = dhtSensor.getTempAndHumidity();
   if (!client.connected()) {
@@ -273,9 +272,6 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     doc["TEMPERATURA"] = String(data.temperature, 1);
     doc["HUMEDAD"] = String(data.humidity, 1);
    doc["DISTANCIA"] = String(d);
-
-   
-    
 String output;
     
     serializeJson(doc, output);
