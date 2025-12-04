@@ -142,8 +142,8 @@ return msg;
 #define BUILTIN_LED 2
 #include "DHTesp.h"
 const int DHT_PIN = 15;
-const int Trigger = 4;   //Pin digital 2 para el Trigger del sensor
-const int Echo = 2; 
+const int Trigger = 2;   //Pin digital 2 para el Trigger del sensor
+const int Echo = 4; 
 DHTesp dhtSensor;
 long duration;
 int distance;
@@ -208,6 +208,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
 
 }
+
 void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {
