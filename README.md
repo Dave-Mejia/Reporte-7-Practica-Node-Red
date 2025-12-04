@@ -302,6 +302,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 ```
 2. Confirmar que la IP configurada en el codigo (const char* mqtt_server =) sea a misma que en el MQTT IN de Node Red.
+
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Codigo%201.png?raw=true)
 
 3. Confirmar que en la programación del Json se tenga el mismo nombre en client.publish que en el MQTT In.
