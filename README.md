@@ -96,7 +96,7 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%203.png?raw=true)
 
 5. Agregar los bloques chart y gauge y conectar como se muestra en la imagen.
-![](<img width="1897" height="850" alt="image" src="https://github.com/user-attachments/assets/85d2b6dc-25fe-4583-bf7f-4f99784eaf12" />)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%20&%20Gauge%201.1.png?raw=true)
 
 
 ### Configurar Dashboard
