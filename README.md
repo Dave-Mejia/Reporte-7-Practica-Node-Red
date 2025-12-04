@@ -323,7 +323,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 9. Buscar el sensor HC-SR04 y agregar
   
 10. Conectar circuito como indica la figura de abajo
-![](
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Circuito%201.png?raw=true)
 
 ### Operación
 12. Iniciar simulador dando clic en el icono "start simulation"
