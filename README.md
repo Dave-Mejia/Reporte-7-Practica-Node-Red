@@ -115,13 +115,13 @@ return msg;
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%206.png?raw=true)
 
 ### Configuracion de Chart & Gauge.
-1. Dar doble clic sobre bloque chart de temperatura y configurar como se indica en la imagen.
+1. Dar doble clic sobre bloque Chart de temperatura y configurar como se indica en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%201.1.png?raw=true)
 
-2. Configurar el bloque Gauge como muestra la siguiente imagen.
+2. Dar doble clic sobre bloque Gauge de temperatura y configurar como muestra la siguiente imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Gauge%201.png?raw=true)
 
-3. Realizar el mismo paso para Chart y Gauge de Humedad.
+3. Realizar el mismo paso para Chart y Gauge de Humedad y Distancia.
 
 ### Confirmación de conexión
 1. Presionar Deploy y confirmar que MQTT In (en este caso DavidM) se conecte
@@ -265,13 +265,6 @@ long t; //tiempo de retardo de eco
   Serial.print("cm");
   Serial.println();
   delay(2000);     
-
-
-
-
-
-
-
 
 delay(1000);
 TempAndHumidity  data = dhtSensor.getTempAndHumidity();
