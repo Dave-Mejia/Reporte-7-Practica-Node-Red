@@ -71,8 +71,8 @@ Dar clic en Update y configurar como se muestra abajo.
 2. Coloca un bloque JSON, dar clic sobre el y configurar comp se muestra en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20JSON%201.png?raw=true)
 
-3. Colocar dos bloques function Y conectar.
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%201.png?raw=true)
+3. Colocar 3 bloques function Y conectar.
+![](
 
 4. Configurar. colocando el siguiente codigo en cada bloque respectivamente:
 ```
