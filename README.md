@@ -294,7 +294,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     Serial.print("Publish message: ");
     Serial.println(output);
     Serial.println(output.c_str());
-    client.publish("RaulA", output.c_str());
+    client.publish("DavidM", output.c_str());
   }
 }
 ```
