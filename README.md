@@ -333,7 +333,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/play.png?raw=true)
 
 
-13. Dar clic en el siguiente icono para iniciar conexion.
+13. Ir a Node Red y dar clic en el siguiente icono para iniciar conexion.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Conexion%201.png?raw=true)
 
 ## Resultados
