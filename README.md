@@ -128,19 +128,23 @@ return msg;
 3. Abrir la terminal de programación y colocar la siguente programación:
 
 ```
-#include <ArduinoJson.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
 #define BUILTIN_LED 2
 #include "DHTesp.h"
 const int DHT_PIN = 15;
+const int Trigger = 4;   //Pin digital 2 para el Trigger del sensor
+const int Echo = 2; 
 DHTesp dhtSensor;
+long duration;
+int distance;
+int safetyDistance;
 // Update these with values suitable for your network.
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 const char* mqtt_server = "3.121.19.141";
-String username_mqtt="Ing.DavidMejia";
+String username_mqtt="educatronicosiot";
 String password_mqtt="12345678";
 
 WiFiClient espClient;
@@ -227,9 +231,38 @@ void setup() {
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
+  Serial.begin(9600);//iniciailzamos la comunicación
+  pinMode(Trigger, OUTPUT); //pin como salida
+  pinMode(Echo, INPUT);  //pin como entrada
+  digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
 }
 
 void loop() {
+
+// distancia= duracion*0.034/2;
+
+safetyDistance = distance;
+long t; //tiempo de retardo de eco
+  long d; //distancia en centimetros
+
+  digitalWrite(Trigger, HIGH);
+  delayMicroseconds(10);          
+  digitalWrite(Trigger, LOW);
+  
+  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
+  d = t/59;             //calculo de distancia en cm
+  
+  Serial.print("Distancia: ");
+  Serial.print(d); 
+  Serial.print("cm");
+  Serial.println();
+  delay(2000);     
+
+
+
+
+
+
 
 
 delay(1000);
@@ -252,7 +285,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     //doc["Empresa"] = "Dave";
     doc["TEMPERATURA"] = String(data.temperature, 1);
     doc["HUMEDAD"] = String(data.humidity, 1);
-   
+   doc["DISTANCIA"] = String(d);
 
     String output;
     
@@ -261,9 +294,11 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     Serial.print("Publish message: ");
     Serial.println(output);
     Serial.println(output.c_str());
-    client.publish("DavidM", output.c_str());
+    client.publish("RaulA", output.c_str());
   }
 }
+<img width="805" height="4749" alt="image" src="https://github.com/user-attachments/assets/002757fc-2dd6-4efd-9169-8fb0b1efe47c" />
+
 ```
 2. Confirmar que la IP configurada en el codigo (const char* mqtt_server =) sea a misma que en el MQTT IN de Node Red.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Codigo%201.png?raw=true)
@@ -285,9 +320,10 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
    
 ![](https://github.com/Dave-Mejia/Reporte-5-Sensor-ultrasonico-y-de-temperatura/blob/main/Add%20new%20part%202.png?raw=true)
 
+9. Buscar el sensor HC-SR04 y agregar
   
-9. Conectar circuito como indica la figura de abajo
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/DHT22%201.png?raw=true)
+10. Conectar circuito como indica la figura de abajo
+![](
 
 ### Operación
 12. Iniciar simulador dando clic en el icono "start simulation"
