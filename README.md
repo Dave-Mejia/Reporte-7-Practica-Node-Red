@@ -95,7 +95,9 @@ return msg;
 
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Configuracion%20Function%203.png?raw=true)
 
-5. Agregar los bloques chart y gauge y conectar como se muestra en la imagen.
+5. Hacer lo mismo para el bloque de distancia
+
+6. Agregar los bloques chart y gauge y conectar como se muestra en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%20&%20Gauge%201.1.png?raw=true)
 
 
@@ -103,17 +105,17 @@ return msg;
 1. Abrir la seción de dashboard
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%201.png?raw=true)
 
-2. Agregrar tabs y configurar
+2. Agregrar tabs, dar clic en edit y configurar como se muestra abajo.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%202.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%203.png?raw=true)
 
-3. Agregar grupo de grafica y de indicadores y configurar
+3. Agregar grupo de grafica y de indicadores, dar clic en edit y configurar como se indica
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%204.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%205+.png?raw=true)
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Dashboard%206.png?raw=true)
 
 ### Configuracion de Chart & Gauge.
-1. Configurar el bloque Chart de temperatura como indica la imagen.
+1. Dar doble clic sobre bloque chart de temperatura y configurar como se indica en la imagen.
 ![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Chart%201.png?raw=true)
 
 2. Configurar el bloque Gauge como muestra la siguiente imagen.
