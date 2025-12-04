@@ -335,7 +335,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 ## Resultados
 Cuando haya funcionado, verás los valores los datos como se muestra en la siguente imagen.
-![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Conexion%202.png?raw=true)
+![](https://github.com/Dave-Mejia/Reporte-7-Practica-Node-Red/blob/main/Resultado%201.png?raw=true)
 
 
 ## Créditos
